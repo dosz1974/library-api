@@ -1,0 +1,30 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.3, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Asus\Documents\4lab\library-api\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Asus\Documents\4lab\library-api
+plugins: anyio-4.15.1
+collecting ... collected 14 items
+
+test_main.py::test_get_empty_books PASSED                                [  7%]
+test_main.py::test_post_book PASSED                                      [ 14%]
+test_main.py::test_get_all_books PASSED                                  [ 21%]
+test_main.py::test_get_book_by_id PASSED                                 [ 28%]
+test_main.py::test_update_book PASSED                                    [ 35%]
+test_main.py::test_delete_book PASSED                                    [ 42%]
+test_main.py::test_book_not_found PASSED                                 [ 50%]
+test_main.py::test_update_missing_book PASSED                            [ 57%]
+test_main.py::test_delete_missing_book PASSED                            [ 64%]
+test_main.py::test_invalid_year PASSED                                   [ 71%]
+test_main.py::test_empty_title PASSED                                    [ 78%]
+test_main.py::test_missing_author PASSED                                 [ 85%]
+test_main.py::test_unique_ids_after_delete PASSED                        [ 92%]
+test_main.py::test_swagger_docs PASSED                                   [100%]
+
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\Asus\Documents\4lab\library-api\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 14 passed, 1 warning in 0.74s ========================
+
